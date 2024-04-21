@@ -1,0 +1,13 @@
+[Unit]
+Description=Fetch data from microinverter ez1 and publish data via mqtt
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/home/apez1_mqtt_publish
+ExecStart=python3.12 /home/apez1_mqtt_publish/apez1_mqtt.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
