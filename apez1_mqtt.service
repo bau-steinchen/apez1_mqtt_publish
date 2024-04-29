@@ -6,7 +6,7 @@ After=network.target
 User=root
 Group=root
 WorkingDirectory=/home/apez1_mqtt_publish
-ExecStart=python3.12 /home/apez1_mqtt_publish/apez1_mqtt.py
+ExecStart=python3 /home/apez1_mqtt_publish/apez1_mqtt.py
 Restart=always
 
 [Install]
